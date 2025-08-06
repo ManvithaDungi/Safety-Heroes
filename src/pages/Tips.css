@@ -1,0 +1,48 @@
+/* src/pages/Tips.css - New file for styling the tips page */
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tip-card {
+  background: var(--bg-card);
+  border: 2px solid var(--pastel-sky);
+  border-radius: 20px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 4px 12px var(--shadow-soft);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(93, 96, 115, 0.08);
+}
+
+.tip-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  background-color: var(--pastel-lemon);
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid var(--pastel-rose);
+}
+
+.tip-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-dark);
+  margin: 0;
+}
