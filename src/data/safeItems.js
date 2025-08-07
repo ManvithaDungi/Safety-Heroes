@@ -1,13 +1,12 @@
 /**
  * Safety items configuration for the game.
- * Image paths are updated to correctly reference files in the `public/assets` directory.
- * The 'incorrect' explanation for safe items has also been corrected.
+ * Added 6 new items for more variety. Total of 12 items.
  */
 const items = [
   {
     id: 1,
     name: 'Knife',
-    image: '/assets/knife.jpg', // Correct path for items in public folder
+    image: '/assets/knife.jpg',
     question: 'Is it safe to touch this?',
     isSafe: false,
     explanation: {
@@ -18,7 +17,7 @@ const items = [
   {
     id: 2,
     name: 'Teddy Bear',
-    image: '/assets/teddyBear.jpg', // Correct path
+    image: '/assets/teddyBear.jpg',
     question: 'Is it safe to play with this?',
     isSafe: true,
     explanation: {
@@ -29,7 +28,7 @@ const items = [
   {
     id: 3,
     name: 'Hot Stove',
-    image: '/assets/stove.jpg', // Correct path
+    image: '/assets/stove.jpg',
     question: 'Is it safe to touch this?',
     isSafe: false,
     explanation: {
@@ -40,7 +39,7 @@ const items = [
   {
     id: 4,
     name: 'Book',
-    image: '/assets/book.jpg', // Correct path
+    image: '/assets/book.jpg',
     question: 'Is it safe to use this?',
     isSafe: true,
     explanation: {
@@ -51,7 +50,7 @@ const items = [
   {
     id: 5,
     name: 'Cleaning Supplies',
-    image: '/assets/cleaning.jpg', // Correct path
+    image: '/assets/cleaning.jpg',
     question: 'Is it safe to play with these?',
     isSafe: false,
     explanation: {
@@ -62,12 +61,79 @@ const items = [
   {
     id: 6,
     name: 'Apple',
-    image: '/assets/apple.jpg', // Correct path
+    image: '/assets/apple.jpg',
     question: 'Is it safe to eat this?',
     isSafe: true,
     explanation: {
         correct: "Yes! Apples are a healthy and safe snack. Always wash them first!",
         incorrect: "It's okay! Apples are a safe and healthy snack, just remember to wash them first."
+    }
+  },
+  // --- New Items ---
+  {
+    id: 7,
+    name: 'Scissors',
+    image: '/assets/scissors.jpg',
+    question: 'Are these safe to use by yourself?',
+    isSafe: false,
+    explanation: {
+      correct: "You got it! Big scissors are sharp. Always ask a grown-up to help you.",
+      incorrect: "Careful! Scissors can be sharp. It's best to have an adult help you use them safely."
+    }
+  },
+  {
+    id: 8,
+    name: 'Soccer Ball',
+    image: '/assets/soccer.jpg',
+    question: 'Is this a safe toy to play with?',
+    isSafe: true,
+    explanation: {
+      correct: "Yes! A ball is a great and safe toy for playing outside.",
+      incorrect: "This is a safe toy! Balls are fun to play with, especially in a park or yard."
+    }
+  },
+  {
+    id: 9,
+    name: 'Pills',
+    image: '/assets/pills.jpg',
+    question: 'Is it safe to eat this if you find it?',
+    isSafe: false,
+    explanation: {
+      correct: "That's very important! Never eat medicine unless a grown-up gives it to you.",
+      incorrect: "Stop! Never eat pills you find. Medicine should only come from a trusted adult."
+    }
+  },
+  {
+    id: 10,
+    name: 'Friendly Dog',
+    image: '/assets/dog.jpg',
+    question: 'Is it safe to pet a dog you don\'t know?',
+    isSafe: false, // It's safer to teach caution first
+    explanation: {
+      correct: "That's the smart choice! Always ask the owner first before petting a new dog.",
+      incorrect: "Hold on! Even if a dog looks friendly, you must always ask the owner before petting it."
+    }
+  },
+  {
+    id: 11,
+    name: 'Matches',
+    image: '/assets/matchstick.jpg',
+    question: 'Are these safe to play with?',
+    isSafe: false,
+    explanation: {
+      correct: "Correct! Matches create fire and are very dangerous. They are only for adults.",
+      incorrect: "Definitely not! Matches are for grown-ups only. They can start a fire and are not toys."
+    }
+  },
+  {
+    id: 12,
+    name: 'Bicycle with Helmet',
+    image: '/assets/bicycle.jpg',
+    question: 'Is riding a bike with a helmet safe?',
+    isSafe: true,
+    explanation: {
+      correct: "You bet! Wearing a helmet keeps your head safe while you have fun riding your bike.",
+      incorrect: "This is safe! A helmet is super important for keeping you safe while riding a bike."
     }
   }
 ];
