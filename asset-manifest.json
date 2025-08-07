@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/SafetyHeroes/static/css/main.e9c51144.css",
+    "main.js": "/SafetyHeroes/static/js/main.6bb46fdb.js",
+    "index.html": "/SafetyHeroes/index.html",
+    "main.e9c51144.css.map": "/SafetyHeroes/static/css/main.e9c51144.css.map",
+    "main.6bb46fdb.js.map": "/SafetyHeroes/static/js/main.6bb46fdb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e9c51144.css",
+    "static/js/main.6bb46fdb.js"
+  ]
+}
