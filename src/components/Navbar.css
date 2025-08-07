@@ -1,208 +1,92 @@
-/* src/components/Navbar.css - Updated Pastel Design */
-
-/* Autism-Friendly Color Palette - Less Orange, More Pink & Blue */
-:root {
-  --pastel-lavender: #E6E6FA;
-  --pastel-mint: #E0FFE0;
-  --pastel-pink: #FFE1F0;
-  --pastel-rose: #FFD6E8;
-  --pastel-sky: #E1F0FF;
-  --pastel-blue: #D6E8FF;
-  --pastel-lemon: #FFFACD;
-  --pastel-lilac: #F0E6FF;
-  --pastel-sage: #F0F8E8;
-  
-  /* Navbar specific colors */
-  --navbar-bg: linear-gradient(135deg, var(--pastel-lilac) 0%, var(--pastel-blue) 100%);
-  --navbar-border: #B3C6FF;
-  --link-bg: var(--pastel-sky);
-  --link-hover: var(--pastel-mint);
-  --link-active: var(--pastel-pink);
-  --link-text: #5D4E75;
-  --link-active-text: #7A2E52;
-}
-
-/* Autism-Friendly Fonts - Clear, readable, and calming */
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap');
+/* src/components/Navbar.css - Styles for the Final Polished Logo */
 
 .navbar {
-  background: var(--navbar-bg);
-  padding: clamp(1rem, 2.5vw, 1.4rem);
-  box-shadow: 
-    0 4px 12px rgba(244, 208, 63, 0.15),
-    0 2px 4px rgba(0,0,0,0.05);
+  background: var(--bg-card);
+  padding: 0.5rem clamp(1rem, 4vw, 2.5rem); /* Fine-tuned padding */
+  box-shadow: 0 2px 8px var(--shadow-soft);
   position: sticky;
   top: 0;
   z-index: 100;
-  border-bottom: 3px solid var(--navbar-border);
-  backdrop-filter: blur(10px);
+  border-bottom: 2px solid var(--pastel-lavender);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-.navbar::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: 
-    radial-gradient(circle at 25% 25%, rgba(255,255,255,0.2) 1px, transparent 1px),
-    radial-gradient(circle at 75% 75%, rgba(255,255,255,0.15) 1px, transparent 1px);
-  background-size: 30px 30px, 25px 25px;
-  pointer-events: none;
-  opacity: 0.7;
+/* --- Logo and Title Styling --- */
+.navbar-logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  text-decoration: none;
+  padding: 0.25rem 0; /* Add a little vertical padding */
+}
+
+.navbar-logo {
+  flex-shrink: 0; /* Prevents the logo from shrinking */
 }
 
 .navbar-title {
-  font-family: 'Lexend', 'Open Sans', sans-serif;
-  color: var(--link-text);
+  font-family: 'Lexend', sans-serif;
+  color: var(--text-dark);
   margin: 0;
-  font-size: clamp(1.4rem, 3.5vw, 1.8rem);
-  font-weight: bold;
-  text-shadow: 0 2px 4px rgba(255,255,255,0.5);
-  position: relative;
-  z-index: 1;
+  font-size: clamp(1.5rem, 3.5vw, 1.8rem); /* Slightly larger title */
+  font-weight: 600;
+  line-height: 1; /* Ensures tight alignment */
 }
 
+/* --- Navigation Links --- */
 .nav-links {
   display: flex;
   justify-content: center;
-  gap: clamp(0.8rem, 3vw, 1.6rem);
-  max-width: 1200px;
-  margin: 0 auto;
+  gap: clamp(0.5rem, 2vw, 1rem);
   flex-wrap: wrap;
-  position: relative;
-  z-index: 1;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: var(--link-text);
-  font-family: 'Lexend', 'Open Sans', sans-serif;
-  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  color: var(--text-dark);
+  font-family: 'Lexend', sans-serif;
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
   font-weight: 500;
-  padding: clamp(0.6rem, 1.5vw, 0.8rem) clamp(1rem, 2.5vw, 1.4rem);
-  border-radius: 20px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  background: linear-gradient(135deg, var(--link-bg) 0%, rgba(255,255,255,0.8) 100%);
-  border: 2px solid rgba(255,255,255,0.4);
-  backdrop-filter: blur(5px);
-  position: relative;
-  overflow: hidden;
-}
-
-.nav-links a::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
-  transition: left 0.5s ease;
-}
-
-.nav-links a:hover::before {
-  left: 100%;
+  padding: 0.6rem 1.2rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
 }
 
 .nav-links a:hover {
-  background: linear-gradient(135deg, var(--link-hover) 0%, rgba(255,255,255,0.9) 100%);
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-  border-color: rgba(255,255,255,0.6);
+  background-color: var(--pastel-sky);
+  transform: translateY(-2px);
 }
 
 .nav-links a.active {
-  background: linear-gradient(135deg, var(--link-active) 0%, var(--pastel-rose) 100%);
-  color: var(--link-active-text);
-  border: 2px solid #FFB3D6;
-  box-shadow: 0 4px 12px rgba(255, 179, 214, 0.3);
-  transform: scale(1.02);
+  background-color: var(--pastel-blue);
+  color: var(--text-dark);
+  font-weight: 600;
+  border-color: var(--pastel-sky);
 }
 
 .nav-links a:focus-visible {
-  outline: 3px solid #66B3FF;
-  outline-offset: 3px;
-  box-shadow: 0 0 0 6px rgba(102, 179, 255, 0.2);
+  outline: 3px solid var(--focus-color);
+  outline-offset: 2px;
+  border-color: var(--focus-color);
+}
+/* Add these enhancements to your existing CSS */
+.navbar-logo {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  transition: transform 0.3s ease;
 }
 
-/* Enhanced Dark Mode */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --navbar-bg: linear-gradient(135deg, #2F2F1F 0%, #3F2F2F 100%);
-    --navbar-border: #4F4F3F;
-    --link-bg: #3F3F4F;
-    --link-hover: #2F4F2F;
-    --link-active: #4F2F3F;
-    --link-text: #E6E6FA;
-    --link-active-text: #FFB8D6;
-  }
-
-  .navbar {
-    box-shadow: 
-      0 4px 12px rgba(79, 79, 63, 0.3),
-      0 2px 4px rgba(0,0,0,0.2);
-  }
-
-  .navbar-title {
-    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-  }
-
-  .nav-links a {
-    background: linear-gradient(135deg, var(--link-bg) 0%, rgba(0,0,0,0.2) 100%);
-    border-color: rgba(255,255,255,0.1);
-  }
-
-  .nav-links a:hover {
-    background: linear-gradient(135deg, var(--link-hover) 0%, rgba(0,0,0,0.3) 100%);
-    border-color: rgba(255,255,255,0.2);
-  }
-
-  .nav-links a.active {
-    background: linear-gradient(135deg, var(--link-active) 0%, #5F3F4F 100%);
-    border-color: #6F4F5F;
-  }
+.navbar-logo-link:hover .navbar-logo {
+  transform: scale(1.05) rotate(2deg);
 }
 
-/* Reduced Motion */
-@media (prefers-reduced-motion: reduce) {
-  .nav-links a {
-    transition: none;
-  }
-  
-  .nav-links a:hover {
-    transform: none;
-  }
-  
-  .nav-links a::before {
-    display: none;
-  }
-}
-
-/* High Contrast Mode */
-@media (prefers-contrast: high) {
-  .navbar {
-    border-bottom-width: 4px;
-  }
-  
-  .nav-links a {
-    border-width: 3px;
-  }
-  
-  .navbar::before {
-    display: none;
-  }
-}
-
-/* Mobile Optimizations */
-@media (max-width: 768px) {
-  .nav-links {
-    gap: clamp(0.5rem, 2vw, 1rem);
-  }
-  
-  .nav-links a {
-    padding: 0.5rem 0.8rem;
-    font-size: 0.9rem;
-  }
+.navbar-title {
+  background: linear-gradient(135deg, #1E293B 0%, #4F46E5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
