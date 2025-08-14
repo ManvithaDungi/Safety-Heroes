@@ -1,4 +1,6 @@
-//src/data/safeItems.js
+// src/data/safeItems.js
+
+// importing images - used as props data later in components
 import knifeImg from '../images/knife.jpg';
 import teddyImg from '../images/teddyBear.jpg';
 import stoveImg from '../images/stove.jpg';
@@ -12,14 +14,15 @@ import dogImg from '../images/dog.jpg';
 import matchImg from '../images/matchstick.jpg';
 import bicycleImg from '../images/bicycle.jpg';
 
+// data array - static data used for rendering lists in components
 const items = [
   {
-    id: 1,
+    id: 1, // key property for lists
     name: 'Knife',
     image: knifeImg,
     question: 'Is it safe to touch this?',
-    isSafe: false,
-    explanation: {
+    isSafe: false, // boolean used for conditional rendering
+    explanation: { // object containing messages for conditional feedback
       correct: "Good job! Knives are sharp and for grown-ups. Always ask an adult for help.",
       incorrect: "Be careful! Knives are sharp and can hurt you. Never touch them without an adult."
     }
@@ -147,4 +150,5 @@ const items = [
   }
 ];
 
+// exporting data for use in components (lists, props)
 export default items;
