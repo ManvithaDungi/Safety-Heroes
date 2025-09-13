@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/Safety-Heroes/static/css/main.f786f1c0.css",
+    "main.js": "/Safety-Heroes/static/js/main.3d42932a.js",
+    "static/js/453.743469d4.chunk.js": "/Safety-Heroes/static/js/453.743469d4.chunk.js",
+    "static/media/profile.jpg": "/Safety-Heroes/static/media/profile.fa4a1ca2bf2863ccbe0a.jpg",
+    "static/media/pet-happy.gif": "/Safety-Heroes/static/media/pet-happy.8ecc0c098a1b3df46f92.gif",
+    "static/media/dog.jpg": "/Safety-Heroes/static/media/dog.2908633e438411548489.jpg",
+    "static/media/matchstick.jpg": "/Safety-Heroes/static/media/matchstick.69ac975eb883d1489bdf.jpg",
+    "static/media/cleaning.jpg": "/Safety-Heroes/static/media/cleaning.b22e299361f52ac822a9.jpg",
+    "static/media/book.jpg": "/Safety-Heroes/static/media/book.ca5f3cd8e73a2622f14a.jpg",
+    "static/media/hero.jpg": "/Safety-Heroes/static/media/hero.ff75d6e1089ef64e5a4a.jpg",
+    "static/media/pills.jpg": "/Safety-Heroes/static/media/pills.14ae8f77b118269d2ed9.jpg",
+    "static/media/bicycle.jpg": "/Safety-Heroes/static/media/bicycle.e372273ffa43f86950ab.jpg",
+    "static/media/stove.jpg": "/Safety-Heroes/static/media/stove.ec57cafe28d5af56e775.jpg",
+    "static/media/teddyBear.jpg": "/Safety-Heroes/static/media/teddyBear.3f022aed48469d4f7cec.jpg",
+    "static/media/apple.jpg": "/Safety-Heroes/static/media/apple.8a7b5ef1183c1b14e028.jpg",
+    "static/media/scissors.jpg": "/Safety-Heroes/static/media/scissors.a0595f757a075c9aeef7.jpg",
+    "static/media/pet-excited.jpg": "/Safety-Heroes/static/media/pet-excited.8b2d44182885286a045d.jpg",
+    "static/media/soccer.jpg": "/Safety-Heroes/static/media/soccer.ed583fc233800fafdd7b.jpg",
+    "static/media/knife.jpg": "/Safety-Heroes/static/media/knife.71051a84dd59f3a115a2.jpg",
+    "static/media/pet-shocked.jpg": "/Safety-Heroes/static/media/pet-shocked.d3909d172849fb1bc858.jpg",
+    "static/media/pet-sad.jpg": "/Safety-Heroes/static/media/pet-sad.be5046b4e4e4eb5b1540.jpg",
+    "static/media/pet-neutral.jpg": "/Safety-Heroes/static/media/pet-neutral.505b3865b74fd372e57b.jpg",
+    "index.html": "/Safety-Heroes/index.html",
+    "main.f786f1c0.css.map": "/Safety-Heroes/static/css/main.f786f1c0.css.map",
+    "main.3d42932a.js.map": "/Safety-Heroes/static/js/main.3d42932a.js.map",
+    "453.743469d4.chunk.js.map": "/Safety-Heroes/static/js/453.743469d4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f786f1c0.css",
+    "static/js/main.3d42932a.js"
+  ]
+}
