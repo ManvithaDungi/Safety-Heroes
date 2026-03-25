@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Safety Heroes",
+  "name": "Safety Heroes - Interactive Learning Platform",
+  "description": "An autism-friendly interactive learning platform for children to master safety, habits, and life skills through engaging mini-games and pet companions.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -10,16 +11,27 @@
     {
       "src": "logo192.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any"
     },
     {
       "src": "logo512.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any"
     }
   ],
-  "start_url": ".",
+  "start_url": "./",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#6366F1",
+  "background_color": "#F0F8F8",
+  "orientation": "portrait",
+  "categories": ["education", "games"],
+  "screenshots": [
+    {
+      "src": "screenshot.png",
+      "sizes": "540x720",
+      "type": "image/png"
+    }
+  ]
 }

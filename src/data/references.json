@@ -1,0 +1,62 @@
+{
+  "articles": [
+    {
+      "id": "autism-web-design",
+      "title": "Web Design for Autism",
+      "url": "https://www.unimelb.edu.au/accessibility/web-design-for-autism",
+      "description": "Comprehensive guide on creating autism-friendly web interfaces",
+      "icon": "📚"
+    },
+    {
+      "id": "best-autism-websites",
+      "title": "Best Autism Websites",
+      "url": "https://webflow.com/made-in-webflow/autism",
+      "description": "Showcasing excellent examples of accessible autism websites",
+      "icon": "🌐"
+    },
+    {
+      "id": "accessible-autism-design",
+      "title": "Create an Accessible Website — Autism Friendly",
+      "url": "https://medium.com/@oksana.iudenkova/create-an-accessible-website-make-it-autism-friendly-db6821c72ed3",
+      "description": "Step-by-step approach to building autism-inclusive designs",
+      "icon": "✨"
+    }
+  ],
+  "videos": [
+    {
+      "id": "web-accessibility-design",
+      "title": "Designing for Web Accessibility",
+      "url": "https://youtu.be/ou8kT9G5ZN4?si=OA4A5UOG0ATBHI8m",
+      "description": "Essential principles for accessible web design",
+      "icon": "🎬"
+    },
+    {
+      "id": "neurodiversity-design",
+      "title": "Autism & Neurodiversity Inclusive Design",
+      "url": "https://youtu.be/zf-1AeoaiqI?si=LdUoE4QOo_pPbfFV",
+      "description": "Understanding neurodiversity in design processes",
+      "icon": "🧠"
+    },
+    {
+      "id": "design-autism",
+      "title": "How to Design for Autism",
+      "url": "https://youtu.be/_F_8s02KuT8?si=YQZakQsVbmdKrYlQ",
+      "description": "Practical tips for autism-centered design",
+      "icon": "🎯"
+    },
+    {
+      "id": "design-autism-environments",
+      "title": "Designing Built Environments for Children with Autism",
+      "url": "https://youtu.be/K0GiTeQF8T0?si=61VGwjmdr_7-j7ze",
+      "description": "Creating supportive physical and digital spaces",
+      "icon": "🏗️"
+    },
+    {
+      "id": "neurodiversity",
+      "title": "Designing for Neurodiversity",
+      "url": "https://youtu.be/3aH--S3r9n4?si=ehZSmQ2WN5PgdeHS",
+      "description": "Broad perspective on inclusive design practices",
+      "icon": "🌈"
+    }
+  ]
+}

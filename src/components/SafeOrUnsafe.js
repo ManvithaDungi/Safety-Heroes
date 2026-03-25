@@ -24,7 +24,9 @@ const UnsafeIcon = () => (
 function SafeOrUnsafe({ item, onAnswer, isAnswered }) {
   // event handling - onError for image load failure
   const handleImageError = (e) => {
-    e.target.src = 'https://placehold.co/250x250/E6E6FA/7A7D96?text=Image+Unavailable';
+    // Use inline SVG data URI instead of external service for better reliability
+    const placeholderSvg = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='250'%3E%3Crect fill='%23E6E6FA' width='250' height='250'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='16' fill='%237A7D96' font-family='Lexend, sans-serif'%3EImage Not Available%3C/text%3E%3C/svg%3E`;
+    e.target.src = placeholderSvg;
     e.target.alt = 'Image not available';
     console.warn(`Image failed to load for item: ${item.name}, attempted src: ${item.image}`);
   };

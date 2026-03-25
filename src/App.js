@@ -5,16 +5,17 @@ import Home from './pages/Home';
 import Game from './pages/Game';
 import Tips from './pages/Tips';
 import PetCompanion from "./components/PetCompanion";
+import ErrorBoundary from './components/ErrorBoundary';
 
 import './App.css';
 // Routing: Routes, Route, and useLocation are imported from react-router-dom to handle client-side routing.
-import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 // State Management API: The GameProvider component is imported to provide context to its children.
 import { GameProvider } from "./GameContext";
 
 function App() {
   return (
-    <Router>
+    <ErrorBoundary>
       <div className="App">
         <Navbar />
         <main id="main-content">
@@ -23,7 +24,7 @@ function App() {
           </GameProvider>
         </main>
       </div>
-    </Router>
+    </ErrorBoundary>
   );
 }
 

@@ -19,3 +19,6 @@ root.render(
 
 reportWebVitals();
 // src/index.js
+
+reportWebVitals();
+// src/index.js

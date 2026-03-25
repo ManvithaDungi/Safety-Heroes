@@ -5,6 +5,7 @@ import './Home.css';
 
 import heroImage from '../images/hero.jpg';
 import profileImage from '../images/profile.jpg';
+import references from '../data/references.json';
 
 function Home() {
   const [visibleConcepts, setVisibleConcepts] = useState(3);
@@ -34,21 +35,6 @@ function Home() {
     { title: "Forms", description: "FeedbackBox has a controlled form input.", icon: "📝", level: "Beginner" },
     { title: "Pagination", description: "Tips.js uses MUI Pagination for showing tips.", icon: "📄", level: "Advanced" }
   ];
-
-  const references = {
-    articles: [
-      { title: "Web Design for Autism", url: "https://www.unimelb.edu.au/accessibility/web-design-for-autism", description: "Comprehensive guide on creating autism-friendly web interfaces" },
-      { title: "Best Autism Websites", url: "https://webflow.com/made-in-webflow/autism", description: "Showcasing excellent examples of accessible autism websites" },
-      { title: "Create an Accessible Website — Autism Friendly", url: "https://medium.com/@oksana.iudenkova/create-an-accessible-website-make-it-autism-friendly-db6821c72ed3", description: "Step-by-step approach to building autism-inclusive designs" }
-    ],
-    videos: [
-      { title: "Designing for Web Accessibility", url: "https://youtu.be/ou8kT9G5ZN4?si=OA4A5UOG0ATBHI8m", description: "Essential principles for accessible web design" },
-      { title: "Autism & Neurodiversity Inclusive Design", url: "https://youtu.be/zf-1AeoaiqI?si=LdUoE4QOo_pPbfFV", description: "Understanding neurodiversity in design processes" },
-      { title: "How to Design for Autism", url: "https://youtu.be/_F_8s02KuT8?si=YQZakQsVbmdKrYlQ", description: "Practical tips for autism-centered design" },
-      { title: "Designing Built Environments for Children with Autism", url: "https://youtu.be/K0GiTeQF8T0?si=61VGwjmdr_7-j7ze", description: "Creating supportive physical and digital spaces" },
-      { title: "Designing for Neurodiversity", url: "https://youtu.be/3aH--S3r9n4?si=ehZSmQ2WN5PgdeHS", description: "Broad perspective on inclusive design practices" }
-    ]
-  };
 
   /**
    * Returns a pastel color based on the concept difficulty level.
@@ -119,7 +105,9 @@ function Home() {
               alt="Manvitha Dungi - Developer"
               className="profile-image"
               onError={(e) => {
-                e.target.src = 'https://placehold.co/150x150/F0E6FF/5D6073?text=MD';
+                // Use inline SVG data URI instead of external service for better reliability
+                const placeholderSvg = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Crect fill='%23F0E6FF' width='150' height='150'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='14' fill='%235D6073' font-family='Lexend, sans-serif'%3EMD%3C/text%3E%3C/svg%3E`;
+                e.target.src = placeholderSvg;
               }}
             />
             <div className="profile-details">
